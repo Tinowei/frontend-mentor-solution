@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Figtree:ital,wght@0,300..900;1,300..900&display=swap" rel="stylesheet">
+
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+  
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script src="https://cdn.tailwindcss.com?plugins=forms,typography,aspect-ratio,line-clamp,container-queries"></script>
+  
+  <script>
+    tailwind.config = {
+        theme: {
+          extend: {
+            colors: {
+              'customGray': 'hsl(220, 15%, 55%)',
+              'yellow': 'hsl(47, 88%, 63%)',
+              'lightgray':' hsl(0, 0%, 50%)',
+              'Black': 'hsl(0, 0%, 7%)',
+            },
+            fontFamily: {
+              'Figtree': ['Figtree', 'sans-serif'],
+            },
+            boxShadow: {
+              'custom':'8px 8px 0px  hsl(0, 0%, 7%)',
+            }
+
+
+          }
+        },
+        screen: {
+          'sm': '375px',
+          'lg': '1440px'
+        },
+      }
+
+  </script>
+  
+  <title>Frontend Mentor | Blog preview card</title>
+
+
+  <!-- <style>
+    body {
+      /* height: 100vh; */
+      /* background-color: hsl(47, 88%, 63%); */
+      /* display: flex; */
+      /* flex-direction: column; */
+      /* justify-content: center; */
+      /* align-items: center; */
+    }
+
+    .preview-card-container {
+      /* font-family: "Figtree", sans-serif; */
+      /* background-color: #fff; */
+      /* border: 1px solid black; */
+      /* border-radius: 15px; */
+      /* box-shadow: 8px 8px 0px  hsl(0, 0%, 7%); */
+      /* margin: 50px; */
+    }
+
+    .img-container  {
+      /* display: flex;
+      justify-content: center;
+      margin: 20px; */
+    }
+
+    .img-container img {
+      /* border-radius: 10px; */
+    }
+
+    .content {
+      /* margin: 20px; */
+      /* outline: 1px solid black; */
+    }
+
+    .content a {
+      /* background-color: hsl(47, 88%, 63%); */
+      /* padding: 5px 10px; */
+      /* border-radius: 5px; */
+      /* display: inline-block; */
+      /* font-weight: 800; */
+      /* margin: 10px 0; */
+    }
+
+    .content .create-time {
+      /* font-size: 15px; */
+      /* margin-bottom: 10px; */
+    }
+
+    
+    .content h2 {
+      /* font-size: 24px;
+      font-weight: 800;
+      margin: 5px 0; */
+      }
+      
+    .content .description {
+      /* color: hsl(0, 0%, 50%); */
+    }
+
+    .avatar-container {
+      /* outline: 1px solid black; */
+      /* margin: 20px;
+      display: flex;
+      align-items: center;
+      gap: 10px; */
+    }
+
+    .avatar-container .avatar img {
+      /* width: 40px; */
+      /* height: 40px; */
+    }
+
+    .name {
+      /* font-size: 15px; */
+      /* font-weight: 800; */
+      
+    }
+  </style> -->
+</head>
+<body class="h-dvh bg-yellow flex flex-col justify-center items-center">
+  <div class="preview-card-container w-96 border-2 border-Black rounded-[15px] bg-white shadow-custom font-Figtree m-[50px]">
+    <div class="img-container flex justify-center m-[20px]">
+      <img class="rounded-[10px]" src="./assets/images/illustration-article.svg" alt="">
+    </div>
+    <div class="content m-[20px]">
+      <a class="bg-yellow py-[5px] px-[10px] rounded-[5px] inline-block font-extrabold my-[10px]" href="#">Learning</a>
+      <div class="create-time text-[16px] mb-[10px]">Published 21 Dec 2023</div>
+      <h2 class="title text-[24px] font-extrabold my-[5px]">
+        HTML & CSS foundations
+      </h2>
+      <div class="description text-lightgray">
+        These languages are the backbone of every website, defining structure, content, and presentation.
+      </div>
+    </div>
+    <div class="avatar-container flex items-center gap-[10px] m-[20px]">
+      <div class="avatar">
+        <img class="w-[40px] h-[40px]" src="./assets/images/image-avatar.webp" alt="">
+      </div>
+      <div class="name text-[16px] font-extrabold">Greg Hooper</div>
+    </div>
+  </div>
+</body>
+</html>
